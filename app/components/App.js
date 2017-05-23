@@ -11,7 +11,7 @@ class App extends React.Component {
 		
 		return (
 			<div>
-				HELLO WORLD
+				<h1>ken barrios</h1>
 				<div onClick={testingThis()}>Moved into Components folder</div>
 			</div>
 		)
