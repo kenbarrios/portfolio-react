@@ -1,3 +1,6 @@
+$base-font: 'Nunito Sans', Helvetica, Arial, sans-serif;
+$header-font: 'Comfortaa', 'Futura', Helvetica, Arial, sans-serif;
+
 * {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -12,11 +15,11 @@ body {
 	min-height: 100vh;
 	width: 100%;
 	display: block;
-	font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+	font-family: $base-font;
 }
 
 h1 {
-	font-family: 'Comfortaa', 'Futura', Helvetica, Arial, sans-serif;
+	font-family: $header-font;
 }
 
 .app-container {
@@ -29,6 +32,7 @@ h1 {
 	width: 50px;
 	height: 100px;
 	display: block;
+	position: fixed;
 	border: 1px solid black;
 }
 
@@ -37,11 +41,9 @@ h1 {
 	left: 8vw;
 	top: 12vh;
 	height: 64.5vh;
-	position: fixed;
 }
 
 .top-block {
-	position: fixed;
 	top: 30vh;
 	left: 20vw;
 	width: 44vw;
@@ -54,12 +56,10 @@ h1 {
 	left: 64vw;
 	top: 30vh;
 	height: 46.5vh;
-	position: fixed;
 	margin: 0 0 0 -2px;
 }
 
 .bottom-block {
-	position: fixed;
 	top: 76.4vh;
 	left: 8vw;
 	width: 67.7vw;

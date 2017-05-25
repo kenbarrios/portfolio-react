@@ -1,7 +1,7 @@
 import React from'react';
 import ReactDOM from'react-dom';
 import PropTypes from'prop-types';
-require('./index.css');
+require('./index.scss');
 import App from './components/App';
 
 ReactDOM.render(
