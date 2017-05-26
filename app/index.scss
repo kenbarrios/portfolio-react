@@ -1,11 +1,14 @@
 $base-font: 'Nunito Sans', Helvetica, Arial, sans-serif;
 $header-font: 'Comfortaa', 'Futura', Helvetica, Arial, sans-serif;
-
+$block-height-width: 77px;
+@mixin box-sizing-mixin($x: border-box) {
+	box-sizing: $x;
+	-webkit-box-sizing: $x;
+	-moz-box-sizing: $x;
+	-ms-box-sizing: $x;
+}
 * {
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
+	@include box-sizing-mixin(border-box);
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -22,46 +25,71 @@ h1 {
 	font-family: $header-font;
 }
 
+nav {
+	width: 100vw;
+	height: 10vh;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 10vh;
+
+	.nav-header {
+		margin-right: 10vw;
+		font-size: 9vw;
+	}
+}
+
 .app-container {
 	min-height: 100vh;
 	width: 100%;
-	display: block;
+}
+
+.content-container {
+	width: 100%;
 }
 
 .blocks {
 	width: 50px;
 	height: 100px;
-	display: block;
-	position: fixed;
 	border: 1px solid black;
 }
 
-.left-block {
-	width: 12vw;
-	left: 8vw;
-	top: 12vh;
-	height: 64.5vh;
+.sub-content-container {
+	display: flex;
+	justify-content: center;
 }
 
-.top-block {
-	top: 30vh;
-	left: 20vw;
-	width: 44vw;
-	height: 12vw;
-	margin: 0 0 0 -1px;
+.sub-content-container-top {
+	.top-block {
+		width: 40vw;
+		height: $block-height-width;
+	}
 }
 
-.right-block {
-	width: 12vw;
-	left: 64vw;
-	top: 30vh;
-	height: 46.5vh;
-	margin: 0 0 0 -2px;
+.sub-content-container-middle {
+	width: 100vw;
+	height: 50vh;
+	overflow: visible;
+
+	.left-block {
+		width: $block-height-width;
+		height: 85vh;
+		top: -24vh;
+	}
+
+	.center-block {
+		width: 40vw;
+		height: 50vh;
+	}
+
+	.right-block {
+		width: $block-height-width;
+		height: 61vh;
+	}
 }
 
-.bottom-block {
-	top: 76.4vh;
-	left: 8vw;
-	width: 67.7vw;
-	height: 12vw;
+.sub-content-container-bottom {
+	.bottom-block {
+		width: 40vw;
+		height: $block-height-width;
+	}
 }
