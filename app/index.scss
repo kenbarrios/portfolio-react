@@ -1,5 +1,5 @@
-$base-font: 'Nunito Sans', Helvetica, Arial, sans-serif;
-$header-font: 'Comfortaa', 'Futura', Helvetica, Arial, sans-serif;
+$base-font: Helvetica, Arial, sans-serif;
+$header-font: Helvetica, Arial, sans-serif;
 $block-height-width: 77px;
 @mixin box-sizing-mixin($x: border-box) {
 	box-sizing: $x;
@@ -9,6 +9,7 @@ $block-height-width: 77px;
 }
 * {
 	@include box-sizing-mixin(border-box);
+	color: rgba(55,55,55, 1);
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -22,74 +23,53 @@ body {
 }
 
 h1 {
-	font-family: $header-font;
-}
-
-nav {
-	width: 100vw;
-	height: 10vh;
-	display: flex;
-	justify-content: flex-end;
-	margin-bottom: 10vh;
-
-	.nav-header {
-		margin-right: 10vw;
-		font-size: 9vw;
-	}
+	font-family: $base-font;
 }
 
 .app-container {
-	min-height: 100vh;
+	min-height: 100%;
 	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.landing {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+	nav {
+		width: 30%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+		text-align: center;
+
+		div {
+			border: 1px solid black;
+		}
+	}
+
+	.landing-header {
+		text-align: end;
+
+		h1 {
+			width: 100%;
+			display: block;
+			position: relative;
+			font-size: 14vw;
+			line-height: 12vw;
+		}
+	}
 }
 
 .content-container {
 	width: 100%;
-}
-
-.blocks {
-	width: 50px;
-	height: 100px;
-	border: 1px solid black;
-}
-
-.sub-content-container {
-	display: flex;
-	justify-content: center;
-}
-
-.sub-content-container-top {
-	.top-block {
-		width: 40vw;
-		height: $block-height-width;
-	}
-}
-
-.sub-content-container-middle {
-	width: 100vw;
-	height: 50vh;
-	overflow: visible;
-
-	.left-block {
-		width: $block-height-width;
-		height: 85vh;
-		top: -24vh;
-	}
-
-	.center-block {
-		width: 40vw;
-		height: 50vh;
-	}
-
-	.right-block {
-		width: $block-height-width;
-		height: 61vh;
-	}
-}
-
-.sub-content-container-bottom {
-	.bottom-block {
-		width: 40vw;
-		height: $block-height-width;
-	}
+	height: 100%;
 }

@@ -6,25 +6,24 @@ import Surprise from './surprise/Surprise';
 
 class App extends React.Component {
 	render() {
-		
+		const linkList = ['about', 'projects', 'contact'];
 		return (
 			<div className='app-container'>
-				<nav>
-					<h1 className='nav-header'>ken barrios</h1>
-				</nav>
-				<div className='content-container'>
-					<div className='sub-content-container sub-content-container-top'>
-						<div className='blocks top-block'>TOP</div>
+				<section className='landing'>
+					<nav>
+					{linkList.map((item) => {
+					
+							return(<div key={item}>{item}</div>)
+					
+					})}
+					</nav>
+					<div className='landing-header'>
+						<h1>ken</h1>
+						<h1>barrios</h1>
 					</div>
-					<div className='sub-content-container sub-content-container-middle'>
-						<div className='blocks left-block'>LEFT</div>
-						<div className='blocks center-block'>CENTER</div>
-						<div className='blocks right-block'>RIGHT</div>
-					</div>
-					<div className='sub-content-container sub-content-container-bottom'>
-						<div className='blocks bottom-block'>BOTTOM</div>
-					</div>
-				</div>
+				</section>
+				<section className='content-container'>
+				</section>
 			</div>
 		)
 	}
