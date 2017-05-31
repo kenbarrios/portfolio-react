@@ -1,30 +1,30 @@
 import React from 'react';
-import About from './about/About';
-import Projects from './projects/Projects';
-import Contact from './contact/Contact';
-import Surprise from './surprise/Surprise';
+import { NavLink } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
+import Nav from './Nav';
+import Title from './Title';
 
 class App extends React.Component {
 	render() {
-		const linkList = ['about', 'projects', 'contact'];
 		return (
-			<div className='app-container'>
-				<section className='landing'>
-					<nav>
-					{linkList.map((item) => {
-					
-							return(<div key={item}>{item}</div>)
-					
-					})}
-					</nav>
-					<div className='landing-header'>
-						<h1>ken</h1>
-						<h1>barrios</h1>
-					</div>
-				</section>
-				<section className='content-container'>
-				</section>
-			</div>
+			<BrowserRouter>
+				<div className='app-container'>
+					<section className='landing'>
+						<Nav />
+						<Switch>
+							<Route exact path='/' component={Title} />
+							<Route render={function() {
+									return (<p>404 Not Found</p>)
+								}}
+							/>
+						</Switch>
+					</section>
+					<section className='content-container'>
+					</section>
+				</div>
+			</BrowserRouter>
 		)
 	}
 }
