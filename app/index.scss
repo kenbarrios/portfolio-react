@@ -34,6 +34,10 @@ ul {
 	list-style: none;
 }
 
+.white-background {
+	background-color: white;
+}
+
 .about-background {
 	background-color: $about-color;
 }
@@ -46,69 +50,27 @@ ul {
 	background-color: $contact-color;
 }
 
+.white-color {
+	color: white;
+}
+
+.about-color {
+	color: $about-color;
+}
+
+.project-color {
+	color: $project-color;
+}
+
+.contact-color {
+	color: $contact-color;
+}
+
 .app-container {
 	min-height: 100%;
 	width: 100%;
 	display: block;
 	position: relative;
-}
-
-.landing {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-
-	nav {
-		width: 30%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		transition: all 1s;
-
-		ul {
-			width: 100%;
-			height: 50vw;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-			align-items: center;
-			text-align: center;
-
-			li {
-				width: 100%;
-				height: 7vw;
-				line-height: 7vw;
-				box-shadow: 1px 1px 1px 0px rgba(0,0,0,.5);
-
-				a {
-					width: 100%;
-					height: 100%;
-					display: block;
-					color: white;
-					font-size: 4vw;
-					font-weight: 100;
-				}
-			}
-		}
-	}
-
-	.landing-header {
-		text-align: end;
-
-		h1 {
-			width: 100%;
-			display: block;
-			position: relative;
-			font-size: 14vw;
-			font-weight: 600;
-			line-height: 12vw;
-		}
-	}
 }
 
 .link-content {
@@ -120,74 +82,17 @@ ul {
 	width: 100%;
 }
 
-.page-header {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
-	h2 {
-		color: white;
-		font-size: 20vw;
-		font-weight: 500;
-	}
-}
-
-.motivation-section {
+.base-section {
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 15px;
+	padding: 0 15px;
 	overflow: hidden;
-
-	.vertical-text-div {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 25vw;
-		height: 100%;
-		text-align: center;
-		font-size: 8vh;
-		font-weight: 600;
-		overflow: hidden;
-
-		p {
-			color: $about-color;
-		}
-	}
-
-	.motivation-list {
-		width: 100%;
-		height: 100%;
-		color: $about-color;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: stretch;
-		padding-right: 4vw;
-
-		li {
-			width: 100%;
-
-			h4 {
-				color: $about-color;
-				font-size: 4vh;
-				font-weight: 100;
-				border-bottom: 1px solid $about-color;
-				margin-bottom: 12px;
-			}
-
-			p {
-				font-size: 3vh;
-				font-weight: 100;
-			}
-		}
-	}
 }
+
+@import './components/global/global';
+@import './components/landing/landing';
+@import './components/about/about';

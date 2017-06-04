@@ -1,4 +1,5 @@
 import React from 'react';
+import VerticalText from '../global/VerticalText';
 
 function Blurb() {
 	let motivations = 
@@ -17,19 +18,8 @@ function Blurb() {
 		];
 
 	return (
-		<section className='motivation-section'>
-			<div className='vertical-text-div'>
-				<p>m</p>
-				<p>o</p>
-				<p>t</p>
-				<p>i</p>
-				<p>v</p>
-				<p>a</p>
-				<p>t</p>
-				<p>i</p>
-				<p>o</p>
-				<p>n</p>
-			</div>
+		<section className='base-section'>
+			<VerticalText text='motivation' color='about'/>
 			<ul className='motivation-list'>
 				{
 					motivations.map((item) => {
