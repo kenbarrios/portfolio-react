@@ -7,7 +7,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
+	padding: 20px;
 
 	.footer-header-wrapper {
 		width: 100%;
@@ -45,6 +45,21 @@ footer {
 				font-weight: 100;
 			}
 		}
+	}
+}
+
+.back-button {
+	width: 4vw;
+	height: 4vw;
+	display: block;
+	position: fixed;
+	font-size: 4vh;
+	top: 12px;
+	right: 12px;
+	z-index: 2;
+
+	a {
+		color: rgba(50,50,50,1);
 	}
 }
 
