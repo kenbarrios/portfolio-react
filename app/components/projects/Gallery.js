@@ -1,47 +1,7 @@
 import React from 'react';
 import projects from '../../utilities/projects';
-
-class GalleryItem extends React.Component {
-	constructor(props) {
-		super(props)
-
-		this.state = {
-			item: {}
-		}
-
-		this.handleClick = this.handleClick.bind(this);
-	}
-
-	handleClick(item) {
-		this.setState({
-			item: item
-		}, () => {
-			this.props.activation(
-			this.state.item
-		)
-		})
-	}
-	render() {
-		let item = this.props.project;
-		
-		return(
-			<li className='gallery-item' key={item.id} 
-				onClick={this.handleClick.bind(this, item)}>
-				<h6>{item.title}</h6>
-				<ul className='tag-list'>
-				{item.tech.map((v, index) => {
-					return(
-						<li key={index}>
-							<p>{v}</p>
-						</li>
-					)
-				})}
-				</ul>
-				{this.state.clicked}
-			</li>
-		)
-	}
-}
+import GalleryItem from './GalleryItem';
+import GalleryItemModal from './GalleryItemModal';
 
 class Gallery extends React.Component {
 	constructor(props) {
@@ -49,18 +9,25 @@ class Gallery extends React.Component {
 
 		this.state = {
 			itemIsActive: false,
-			activeItem: {}
+			activeItem: null
 		}
 
 		this.handleActivation = this.handleActivation.bind(this);
+		this.handleReset = this.handleReset.bind(this);
 	}
 
 	handleActivation(item) {
-		console.log('what is item? ', item);
 		this.setState({
 			itemIsActive: this.state.itemIsActive = !this.state.itemIsActive,
 			activeItem: item
 			
+		})
+	}
+
+	handleReset(bool) {
+		this.setState({
+			itemIsActive: bool,
+			activeItem: null
 		})
 	}
 
@@ -76,6 +43,11 @@ class Gallery extends React.Component {
 					)
 				})}
 				</ul>
+
+				{!!this.state.activeItem && 
+					<GalleryItemModal project={this.state.activeItem} activation={this.state.itemIsActive} reset={this.handleReset}/>
+				}
+				
 			</section>
 		)
 	}
