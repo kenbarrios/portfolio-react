@@ -8,17 +8,18 @@ function VerticalText(props) {
 		
 	}
 	return(
-		<div className='vertical-text-div'>
-			{list.map((l, index) => {
-				return(<p className={props.color + '-color'} key={index}>{ l }</p>);
-			})}
+		<div className={'vertical-text-div ' + props.background + '-background'}>
+		{list.map((l, index) => {
+			return(<p className={props.color + '-color'} key={index}>{ l }</p>);
+		})}
 		</div>
 	)
 }
 
 VerticalText.propTypes = {
 	text: PropType.string.isRequired,
-	color: PropType.string.isRequired
+	color: PropType.string.isRequired,
+	background: PropType.string.isRequired
 }
 
 module.exports = VerticalText;

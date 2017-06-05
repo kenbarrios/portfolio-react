@@ -1,0 +1,60 @@
+@mixin galleryItemBase($num) {
+	@if ($num == 2) {
+		width: 35%;
+		margin: 0 0 15vh 4vh;
+	} @else if ($num == 3) {
+		width: 35%;
+	} @else {
+		width: 55%;
+	}
+}
+
+.gallery-list {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 25px;
+
+	.gallery-item {
+		width: 55%;
+		height: 50vw;
+		border: 1px solid $project-color;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+
+		@for $i from 1 through 4 {
+			&:nth-child(#{$i}n + #{$i}) {
+				@include galleryItemBase($i);
+			}
+		}
+
+		h6 {
+			color: $project-color;
+			font-size: 4.5vw;
+			padding: 0 2vw;
+			text-align: center;
+		}
+
+		.tag-list {
+			padding: 2vw;
+
+			li {
+				border: 1px solid $project-color;
+				margin-bottom: 2px; 
+				padding: 5px;
+
+				p {
+					color: $project-color;
+					font-size: 2vw;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

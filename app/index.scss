@@ -73,6 +73,7 @@ ul {
 	position: relative;
 }
 
+// this will pop out the div for the link
 .link-content {
 	background-color: white;
 	position: absolute;
@@ -96,3 +97,4 @@ ul {
 @import './components/global/global';
 @import './components/landing/landing';
 @import './components/about/about';
+@import './components/projects/projects';

@@ -19,20 +19,18 @@ function Blurb() {
 
 	return (
 		<section className='base-section'>
-			<VerticalText text='motivation' color='about'/>
+			<VerticalText text='motivation' color='about' background='white'/>
 			<ul className='motivation-list'>
-				{
-					motivations.map((item) => {
-						return(
-							<li key={item.title}>
-								<h4>{item.title}</h4>
-								<p>
-									{item.body}
-								</p>
-							</li>
-						)
-					})
-				}
+			{motivations.map((item) => {
+				return(
+					<li key={item.title}>
+						<h4>{item.title}</h4>
+						<p>
+							{item.body}
+						</p>
+					</li>
+				)
+			})}
 			</ul>
 		</section>
 	)

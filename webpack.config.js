@@ -30,7 +30,7 @@ var config = {
 				use: [
 					{ loader: 'file-loader' }
 				]
-			}
+			},
 		]
 	},
 	devServer: {

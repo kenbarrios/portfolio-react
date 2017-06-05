@@ -35,9 +35,10 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+	transform: rotateZ(-20deg);
 
 	li {
-		width: 100%;
+		width: 60%;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
