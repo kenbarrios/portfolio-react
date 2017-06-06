@@ -45,6 +45,13 @@
 	.landing-header {
 		text-align: end;
 
+		.test-image {
+			width: 300px;
+			height: 300px;
+			display: block;
+			background: url('app/images/idol.jpeg');
+			
+		}
 		h1 {
 			width: 100%;
 			display: block;

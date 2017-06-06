@@ -13,8 +13,8 @@ var config = {
 	module: {
 		rules: [
 			{ test: /\.(js)$/, use: 'babel-loader' },
-			{ test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader']},
-			{ test: /\.css$/, use: [ 'style-loader', 'css-loader' ]},
+			{ test: /\.css$/, use: [ 'style-loader', 'css-loader?url=false' ]},
+			{ test: /\.scss$/, use: ['style-loader', 'css-loader?url=false', 'sass-loader']},
 			{ test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
 				use: [
 						{
@@ -26,10 +26,8 @@ var config = {
 						}
 					]
 			},
-			{ test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-				use: [
-					{ loader: 'file-loader' }
-				]
+			{ test: /\.(ttf|eot|jpeg|jpg|png|gif|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
+				use: [ 'file-loader' ]
 			},
 		]
 	},
