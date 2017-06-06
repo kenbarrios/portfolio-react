@@ -135,6 +135,45 @@
 				flex-direction: column;
 
 			}
+
+			.modal-title {
+
+				h3 {
+					color: $project-color;
+					font-size: 15vw;
+				}
+			}
+
+			.modal-brief {
+
+				p {
+					background: $project-color;
+					color: white;
+					font-size: 5vw;
+					font-weight: 100;
+					padding: 10px;
+					text-transform: lowercase;
+				}
+			}
+
+			.tech-list-div {
+
+				ul {
+					min-height: 30vw;
+					list-style-type: square;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					padding: 15px;
+
+					li {
+						color: $project-color;
+						font-size: 4vw;
+						font-weight: 100;
+					}
+				}
+			}
+				
 		}
 	}
 }

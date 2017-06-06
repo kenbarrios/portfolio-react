@@ -8,7 +8,6 @@ class GalleryItemModal extends React.Component {
 		this.state = {
 			modalOpen: true
 		}
-		console.log('props? ', this.props.project);
 		this.handleClick = this.handleClick.bind(this);
 	}
 
@@ -45,7 +44,7 @@ class GalleryItemModal extends React.Component {
 							<ul>
 							{ proj.tech.map((tech) => {
 								return(
-									<li>{tech}</li>
+									<li key={tech}>{tech}</li>
 								)
 							})}
 							</ul>
