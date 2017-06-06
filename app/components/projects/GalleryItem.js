@@ -24,19 +24,20 @@ class GalleryItem extends React.Component {
 		let item = this.props.project;
 		
 		return(
-			<li className='gallery-item' key={item.id} 
+			<li className={'gallery-item ' + item.alias + '-background'} key={item.id} 
 				onClick={this.handleClick.bind(this, item)}>
-				<h6>{item.title}</h6>
-				<ul className='tag-list'>
-				{item.tech.map((v, index) => {
-					return(
-						<li key={index}>
-							<p>{v}</p>
-						</li>
-					)
-				})}
-				</ul>
-				{this.state.clicked}
+				<div className='gallery-item-info'>
+					<h6>{item.title}</h6>
+					<ul className='tag-list'>
+					{item.tech.map((v, index) => {
+						return(
+							<li key={index}>
+								<p>{v}</p>
+							</li>
+						)
+					})}
+					</ul>
+				</div>
 			</li>
 		)
 	}
