@@ -1,7 +1,7 @@
 import React from 'react';
 import projects from '../../utilities/projects';
 import GalleryItem from './GalleryItem';
-import GalleryItemModal from './GalleryItemModal';
+import GalleryItemModal from './gallery-item-modal/GalleryItemModal';
 
 class Gallery extends React.Component {
 	constructor(props) {

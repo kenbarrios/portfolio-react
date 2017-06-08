@@ -1,6 +1,7 @@
 .landing {
 	width: 100%;
 	height: 100vh;
+	background-color: $white-color;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -16,19 +17,25 @@
 		transition: all 1s;
 
 		ul {
-			width: 100%;
-			height: 50vw;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-			align-items: center;
-			text-align: center;
+				width: 100%;
+				height: 50vw;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-top: 3vw;
+				margin-left: 3vw;
+				text-align: center;
+				transform: rotateZ(-30deg);
 
 			li {
 				width: 100%;
-				height: 7vw;
-				line-height: 7vw;
-				box-shadow: 1px 1px 1px 0px rgba(0,0,0,.5);
+				height: 9vw;
+				line-height: 9vw;
+
+			&:nth-child(2) {
+				margin: 12px;
+			}
 
 				a {
 					width: 100%;

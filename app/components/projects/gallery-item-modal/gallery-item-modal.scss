@@ -1,0 +1,115 @@
+.gallery-item-modal {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(20,20,20,1);
+	opacity: 1;
+	overflow-y: scroll;
+	padding: 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4;
+
+	.close-button {
+		display: block;
+		position: fixed;
+		font-size: 4vw;
+		top: 4vw;
+		right: 6vw;
+		z-index: 3;
+	}
+
+	.gallery-item-modal-body {
+		background-color: rgba(245,245,245,1);
+		padding: 15px;
+
+		.gallery-modal-image-container {
+			width: 80vw;
+			height: 50vw;
+			display: block;
+			margin: 4vw auto;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.gallery-modal-info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.half-info {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+
+				&.bottom {
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: space-around;
+					align-items: flex-start;
+				}
+
+				.site-repo-div {
+					display: flex;
+					min-height: 30vw;
+					flex-direction: column;
+					justify-content: space-around;
+					padding: 15px;
+
+					a {
+						color: white;
+						background-color: $project-color;
+						font-size: 4vw;
+						font-weight: 100;
+						padding: 10px;
+					}
+				}
+
+				.modal-title {
+					margin-bottom: 15px;
+
+					h3 {
+						color: $project-color;
+						font-size: 15vw;
+					}
+				}
+
+				.modal-brief {
+
+					p {
+						background: $project-color;
+						color: white;
+						font-size: 5vw;
+						font-weight: 100;
+						padding: 10px;
+						text-transform: lowercase;
+					}
+				}
+
+				.tech-list-div {
+
+					ul {
+						min-height: 30vw;
+						list-style-type: square;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-around;
+						padding: 15px;
+
+						li {
+							color: $project-color;
+							font-size: 4vw;
+							font-weight: 100;
+						}
+					}
+				}
+					
+			}
+		}
+	}
+}

@@ -3,6 +3,7 @@ $block-height-width: 77px;
 $project-color: rgba(255,196,96,1);
 $about-color: rgba(247, 190, 221, 1);
 $contact-color: rgba(57,131,247,1);
+$white-color: rgba(250,250,250,1);
 
 @mixin box-sizing-mixin($x: border-box) {
 	box-sizing: $x;
@@ -12,7 +13,7 @@ $contact-color: rgba(57,131,247,1);
 }
 * {
 	@include box-sizing-mixin(border-box);
-	color: rgba(55,55,55, 1);
+	color: rgba(20,20,20, 1);
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -35,11 +36,11 @@ ul {
 }
 
 .white-background {
-	background-color: white;
+	background-color: $white-color;
 }
 
 .white-color {
-	color: white;
+	color: $white-color;
 }
 
 .about-background {
@@ -98,3 +99,4 @@ ul {
 @import './components/landing/landing';
 @import './components/about/about';
 @import './components/projects/projects';
+@import './components/projects/gallery-item-modal/gallery-item-modal';

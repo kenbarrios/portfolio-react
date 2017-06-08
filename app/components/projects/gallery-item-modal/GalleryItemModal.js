@@ -24,12 +24,12 @@ class GalleryItemModal extends React.Component {
 		let proj = this.props.project;
 		return(
 			<div className='gallery-item-modal'>
-				<div className='gallery-item-modal-background'>
-					<aside className='back-button' onClick={this.handleClick.bind(this)}>
+				<div className='gallery-item-modal-body'>
+					<aside className='close-button' onClick={this.handleClick.bind(this)}>
 						<a className='fa fa-times' aria-hidden='true'></a>
 					</aside>
 					<div className='gallery-modal-image-container'>
-						<img className='gallery-modal-image' src={require('../../images/' + proj.alias + '.jpeg')} alt={proj.title} />
+						<img className='gallery-modal-image' src={require('../../../images/' + proj.alias + '.jpeg')} alt={proj.title} />
 					</div>
 					<section className='gallery-modal-info'>
 						<div className='half-info top'>
