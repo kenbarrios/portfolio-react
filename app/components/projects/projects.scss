@@ -61,7 +61,7 @@
 			}
 
 			h6 {
-				color: white;
+				color: $white-color;
 				font-size: 4.5vw;
 				font-weight: 100;
 				padding: 0 2vw;
@@ -72,12 +72,12 @@
 				padding: 2vw;
 
 				li {
-					border: 1px solid white;
+					border: 1px solid $white-color;
 					margin-bottom: 2px; 
 					padding: 5px;
 
 					p {
-						color: white;
+						color: $white-color;
 						font-size: 2vw;
 						font-weight: 100;
 						text-align: center;

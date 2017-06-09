@@ -4,6 +4,7 @@ $project-color: rgba(255,196,96,1);
 $about-color: rgba(247, 190, 221, 1);
 $contact-color: rgba(57,131,247,1);
 $white-color: rgba(250,250,250,1);
+$black-color: rgba(20,20,20,1);
 
 @mixin box-sizing-mixin($x: border-box) {
 	box-sizing: $x;
@@ -24,7 +25,12 @@ body {
 	min-height: 100vh;
 	width: 100%;
 	display: block;
+	background-color: $white-color;
 	font-family: $base-font;
+}
+
+body::-webkit-scrollbar{
+	display: none;
 }
 
 h1 {
@@ -76,7 +82,7 @@ ul {
 
 // this will pop out the div for the link
 .link-content {
-	background-color: white;
+	background-color: $white-color;
 	position: absolute;
 	top: 0;
 	left: 0;

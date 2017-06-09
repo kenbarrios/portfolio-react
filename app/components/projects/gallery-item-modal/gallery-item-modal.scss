@@ -10,6 +10,10 @@
 	left: 0;
 	z-index: 4;
 
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
 	.close-button {
 		display: block;
 		position: fixed;
@@ -17,17 +21,21 @@
 		top: 4vw;
 		right: 6vw;
 		z-index: 3;
+
+		a {
+			color: $white-color;
+		}
 	}
 
 	.gallery-item-modal-body {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
 		background-color: rgba(245,245,245,1);
 		padding: 15px;
 
 		.gallery-modal-image-container {
-			width: 80vw;
-			height: 50vw;
-			display: block;
-			margin: 4vw auto;
+			margin: 0 0 2vw 0;
 
 			img {
 				width: 100%;
@@ -62,7 +70,7 @@
 					padding: 15px;
 
 					a {
-						color: white;
+						color: $white-color;
 						background-color: $project-color;
 						font-size: 4vw;
 						font-weight: 100;
@@ -75,7 +83,7 @@
 
 					h3 {
 						color: $project-color;
-						font-size: 15vw;
+						font-size: 12vw;
 					}
 				}
 
@@ -83,7 +91,7 @@
 
 					p {
 						background: $project-color;
-						color: white;
+						color: $white-color;
 						font-size: 5vw;
 						font-weight: 100;
 						padding: 10px;

@@ -57,7 +57,7 @@ footer {
 	z-index: 3;
 
 	a {
-		color: rgba(50,50,50,1);
+		color: $black-color;
 	}
 }
 
@@ -70,7 +70,7 @@ footer {
 	align-items: center;
 
 	h2 {
-		color: white;
+		color: $white-color;
 		font-size: 20vw;
 		font-weight: 500;
 	}
