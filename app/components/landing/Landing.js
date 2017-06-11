@@ -5,6 +5,8 @@ import Nav from './Nav';
 import Title from './Title';
 import About from '../about/About';
 import Projects from '../projects/Projects';
+import Contact from '../contact/Contact';
+
 
 function Landing() {
 	return (
@@ -14,6 +16,7 @@ function Landing() {
 				<Route exact path='/' component={Title} />
 				<Route path='/about' component={About} />
 				<Route path='/projects' component={Projects} />
+				<Route path='/contact' component={Contact} />
 				<Route render={function() {
 						return (<p>404 Not Found</p>)
 					}}

@@ -1,4 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import GalleryItemModalCloseButton from './GalleryItemModalCloseButton';
+import GalleryItemModalImage from './GalleryItemModalImage';
 
 class GalleryItemModal extends React.Component {
 
@@ -11,9 +14,9 @@ class GalleryItemModal extends React.Component {
 		this.handleClick = this.handleClick.bind(this);
 	}
 
-	handleClick() {
+	handleClick(bool) {
 		this.setState({
-			modalOpen: false
+			modalOpen: bool
 		}, () => {
 			this.props.reset(
 				this.state.modalOpen
@@ -25,12 +28,10 @@ class GalleryItemModal extends React.Component {
 		return(
 			<div className='gallery-item-modal'>
 				<div className='gallery-item-modal-body'>
-					<aside className='close-button' onClick={this.handleClick.bind(this)}>
-						<a className='fa fa-times' aria-hidden='true'></a>
-					</aside>
-					<div className='gallery-modal-image-container'>
-						<img className='gallery-modal-image' src={require('../../../images/' + proj.alias + '.jpeg')} alt={proj.title} />
-					</div>
+					<GalleryItemModalCloseButton close={this.handleClick} />
+					
+					<GalleryItemModalImage project={proj} />
+					
 					<section className='gallery-modal-info'>
 						<div className='half-info top'>
 							<div className='modal-title'>
@@ -60,6 +61,10 @@ class GalleryItemModal extends React.Component {
 			</div>
 		)
 	}
+}
+
+GalleryItemModal.propTypes = {
+	project: PropTypes.object.isRequired
 }
 
 module.exports = GalleryItemModal;

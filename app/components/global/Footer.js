@@ -4,7 +4,7 @@ function Footer() {
 	return (
 		<footer>
 			<div className='footer-header-wrapper'>
-				<h3>contact</h3>
+				<h3>connect</h3>
 			</div>
 			<ul className='footer-link-list'>
 				<li>

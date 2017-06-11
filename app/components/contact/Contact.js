@@ -1,9 +1,18 @@
 import React from 'react';
+import Back from '../global/Back';
+import PageHeader from '../global/PageHeader';
+import Footer from '../global/Footer';
 
 class Contact extends React.Component {
 	render() {
 		return(
-			<div className='blocks right-block'>Contact</div>
+			<section className='link-content'>
+				<Back />
+				<PageHeader>
+					contact
+				</PageHeader>
+				<Footer />
+			</section>
 		)
 	}
 }

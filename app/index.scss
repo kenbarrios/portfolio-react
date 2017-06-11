@@ -15,7 +15,6 @@ $black-background: rgba(50,50,50,1);
 }
 * {
 	@include box-sizing-mixin(border-box);
-	color: $black-text;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -26,6 +25,7 @@ body {
 	min-height: 100vh;
 	width: 100%;
 	display: block;
+	color: $black-text;
 	background-color: $white-color;
 	font-family: $base-font;
 }
