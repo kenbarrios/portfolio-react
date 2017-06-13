@@ -1,0 +1,23 @@
+.resume-header {
+	height: 33vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-content: flex-start;
+
+	.resume-header-contact {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+
+		h2 {
+			font-size: 5vw;
+		}
+	}
+
+	.avatar {
+		width: 200px;
+	}
+}

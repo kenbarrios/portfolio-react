@@ -50,7 +50,7 @@ const projectList = [
 ];
 
 module.exports = {
-	getList: function() {
+	getList: ()  => {
 		return projectList;
 	}
 }

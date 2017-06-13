@@ -1,22 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import VerticalText from '../global/VerticalText';
+import ResumeHeader from './resume-content/ResumeHeader';
+import resume from '../../utilities/resume';
 
 class Resume extends React.Component {
 	render() {
 		return(
 			<section className='base-section'>
 				<div className='resume-wrapper'>
-					<div className='resume-header'>
-						<div className='resume-header-contact'>
-							<h2>ken barrios</h2>
-							<h3>lincoln square, chicago</h3>
-							<p>ken.barrios.13 at gmail</p>
-						</div>
-						<div className='resume-header-avatar'>
-							<img className='avatar' src={require('../../images/bymerchmart.jpg')} />
-						</div>
-					</div>
+					<ResumeHeader />
+
 					<div className='resume-body'>
 						<div className='resume-blurb'>
 							<article>
