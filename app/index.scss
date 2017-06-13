@@ -2,7 +2,7 @@ $base-font: Helvetica, Arial, sans-serif;
 $block-height-width: 77px;
 $project-color: rgba(255,196,96,1);
 $about-color: rgba(247, 190, 221, 1);
-$contact-color: rgba(57,131,247,1);
+$blog-color: rgba(57,131,247,1);
 $white-color: rgba(250,250,250,1);
 $black-text: rgba(20,20,20,1);
 $black-background: rgba(50,50,50,1);
@@ -58,8 +58,8 @@ ul {
 	background-color: $project-color;
 }
 
-.contact-background {
-	background-color: $contact-color;
+.blog-background {
+	background-color: $blog-color;
 }
 
 .about-color {
@@ -70,8 +70,8 @@ ul {
 	color: $project-color;
 }
 
-.contact-color {
-	color: $contact-color;
+.blog-color {
+	color: $blog-color;
 }
 
 .app-container {

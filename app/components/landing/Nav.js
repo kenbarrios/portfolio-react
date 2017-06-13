@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Nav() {
-	const linkList = ['about', 'projects', 'contact'];
+	const linkList = ['about', 'projects', 'blog'];
 	return(
 		<nav>
 			<ul>

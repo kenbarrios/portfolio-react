@@ -3,13 +3,13 @@ import Back from '../global/Back';
 import PageHeader from '../global/PageHeader';
 import Footer from '../global/Footer';
 
-class Contact extends React.Component {
+class Blog extends React.Component {
 	render() {
 		return(
 			<section className='link-content'>
 				<Back />
 				<PageHeader>
-					contact
+					blog
 				</PageHeader>
 				<Footer />
 			</section>
@@ -17,4 +17,4 @@ class Contact extends React.Component {
 	}
 }
 
-module.exports = Contact;
+module.exports = Blog;
