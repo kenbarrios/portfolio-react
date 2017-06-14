@@ -1,23 +1,115 @@
+.text-align-left {
+	text-align: left;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
 .resume-header {
-	height: 33vw;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: flex-start;
 
 	.resume-header-contact {
+		background-color: $about-color;
+		color: $white-color;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
-		justify-content: space-around;
+		justify-content: center;
 
 		h2 {
-			font-size: 5vw;
+			font-size: 7vw;
+			font-weight: 500;
+		}
+		h3, p {
+			font-size: 3vw;
+			font-weight: 100
 		}
 	}
 
 	.avatar {
-		width: 200px;
+		width: 35vw;
+	}
+}
+
+.resume-body {
+	font-weight: 100;
+	
+	.resume-blurb {
+		padding-top: 1vw;
+
+		article {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			text-align: center;
+
+			span {
+				font-size: 6vw;
+			}
+
+			p {
+				font-size: 4vw;
+				font-weight: 100;
+				text-align: center;
+			}
+		}
+	}
+
+	.resume-body-lists {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 2vw;
+
+		h4 {
+			font-size: 4vw;
+			font-weight: 100;
+		}
+
+		.resume-list-header {
+			font-size: 5vw;
+			font-weight: 100;
+			text-decoration: underline;
+		}
+
+		.resume-tech-list {
+			ul {
+				list-style-type: square;
+			
+				li {
+					font-size: 4vw;
+					line-height: 6vw;
+					margin-left: 3vw;
+				}
+			}
+		}
+
+		.resume-body-sub-lists {
+			background-color: $about-color;
+			color: $white-color;
+			
+			h3 {
+				margin-bottom: 1vw;
+			}
+
+			ul {
+
+				li {
+					height: 14vw;
+					text-align: right;
+
+					p {
+						font-size: 3vw;
+					}
+				}
+			}
+		}
 	}
 }
