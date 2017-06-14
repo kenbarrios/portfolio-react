@@ -1,18 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function ResumeHeader() {
+function ResumeHeader(props) {
 	return(
 		<div className='resume-header'>
 			<div className='resume-header-contact'>
-				<h2>ken barrios</h2>
-				<h3>lincoln square, chicago</h3>
-				<p>ken.barrios.13 at gmail</p>
+				<h2>{props.contact.name}</h2>
+				<h3>{props.contact.location}</h3>
+				<p>{props.contact.email}</p>
 			</div>
 			<div className='resume-header-avatar'>
-				<img className='avatar' src={require('../../../images/ken.jpg')} />
+				<img className='avatar' src={require('../../../images/' + props.contact.img)} />
 			</div>
 		</div>
 	)
+}
+
+ResumeHeader.propTypes = {
+	contact: PropTypes.object.isRequired
 }
 
 module.exports = ResumeHeader;
