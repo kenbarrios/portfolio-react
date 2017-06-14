@@ -2,7 +2,7 @@ const resume = {
 	contact: {
 		name: 'ken barrios',
 		location: 'lincoln square, chicago',
-		email: 'keniswaiting at gmail',
+		email: 'ken.barrios.13 at gmail',
 		img: 'ken.jpg'
 	},
 	blurb: 'I want to make things, destroy things, then make more things',

@@ -53,6 +53,7 @@
 		padding-top: 1vw;
 
 		article {
+			color: $about-color;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -90,6 +91,8 @@
 		}
 
 		.resume-tech-list {
+			color: $about-color;
+			
 			ul {
 			
 				li {
