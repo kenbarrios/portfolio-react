@@ -6,6 +6,14 @@
 	text-align: right;
 }
 
+.resume-wrapper {
+	width: 85%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
 .resume-header {
 	display: flex;
 	flex-direction: row;
@@ -20,6 +28,7 @@
 		flex-direction: column;
 		flex-wrap: nowrap;
 		justify-content: center;
+		padding: 2vw;
 
 		h2 {
 			font-size: 7vw;
@@ -33,6 +42,7 @@
 
 	.avatar {
 		width: 35vw;
+		vertical-align: middle;
 	}
 }
 
@@ -81,12 +91,10 @@
 
 		.resume-tech-list {
 			ul {
-				list-style-type: square;
 			
 				li {
 					font-size: 4vw;
 					line-height: 6vw;
-					margin-left: 3vw;
 				}
 			}
 		}
@@ -94,7 +102,8 @@
 		.resume-body-sub-lists {
 			background-color: $about-color;
 			color: $white-color;
-			
+			padding: 2vw;
+
 			h3 {
 				margin-bottom: 1vw;
 			}
