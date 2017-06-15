@@ -1,0 +1,42 @@
+@mixin base-header-font-size($x: 10, $y: 100) {
+	font-size: #{$x}vw;
+	font-weight: $y;
+}
+
+.drafting-wrapper {
+	min-height: 100vh;
+	@include base-flex-around-center(column, space-between, flex-start);
+	color: $drafting-color;
+
+	.drafting-header {
+		padding: 20px;
+
+		h2 {
+			@include base-header-font-size();
+			background-color: $drafting-color;
+			color: $white-color;
+			padding: 3vw;
+		}
+
+		span {
+			@include base-header-font-size(5);
+			padding: 3vw;
+		}
+
+	}
+
+	.drafting-article {
+		@include base-header-font-size(5);
+		padding: 5vw;
+
+		p {
+			margin-bottom: 5vw;
+			line-height: 8vw;
+		}
+	}
+
+
+	.drafting-image {
+		width: 100vw;
+	}
+}

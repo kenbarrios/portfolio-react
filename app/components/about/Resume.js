@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import ResumeHeader from './resume-content/ResumeHeader';
 import ResumeBlurb from './resume-content/ResumeBlurb';
 import ResumeTechList from './resume-content/ResumeTechList';
-import ResumeWorkList from './resume-content/ResumeWorkList';
-import ResumeSchoolList from './resume-content/ResumeSchoolList';
 import ResumeDetailedList from './resume-content/ResumeDetailedList';
 
 import resume from '../../utilities/resume';

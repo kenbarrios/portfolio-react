@@ -5,7 +5,7 @@ import Nav from './Nav';
 import Title from './Title';
 import About from '../about/About';
 import Projects from '../projects/Projects';
-import Blog from '../blog/Blog';
+import Drafting from '../drafting/Drafting';
 
 
 function Landing() {
@@ -16,7 +16,7 @@ function Landing() {
 				<Route exact path='/' component={Title} />
 				<Route path='/about' component={About} />
 				<Route path='/projects' component={Projects} />
-				<Route path='/blog' component={Blog} />
+				<Route path='/drafting' component={Drafting} />
 				<Route render={function() {
 						return (<p>404 Not Found</p>)
 					}}
