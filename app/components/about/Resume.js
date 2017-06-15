@@ -5,6 +5,7 @@ import ResumeBlurb from './resume-content/ResumeBlurb';
 import ResumeTechList from './resume-content/ResumeTechList';
 import ResumeWorkList from './resume-content/ResumeWorkList';
 import ResumeSchoolList from './resume-content/ResumeSchoolList';
+import ResumeDetailedList from './resume-content/ResumeDetailedList';
 
 import resume from '../../utilities/resume';
 
@@ -24,10 +25,9 @@ class Resume extends React.Component {
 							<ResumeTechList tech={cv.tech} />
 
 							<div className='resume-body-sub-lists'>
-								
-								<ResumeWorkList work={cv.work} />
+								<ResumeDetailedList title='work' list={cv.work} />
+								<ResumeDetailedList title='school' list={cv.school} />
 
-								<ResumeSchoolList school={cv.school} />
 							</div>
 						</div>
 					</div>
