@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px) {
+	.gallery-list {
+		@include base-flex-around-center(column, center, center);
+
+		.gallery-item:nth-child(1n + 1) {
+			width: 100%;
+			margin: 5vw 0;
+
+			.gallery-item-info {
+				h6 {
+					font-size: 7vw;
+				}
+
+				.tag-list li p {
+					font-size: 5vw;
+				}
+			}
+		}
+	}
+}
