@@ -12,26 +12,31 @@
 		padding: 20px;
 
 		h2 {
-			@include base-header-font-size();
+			//@include base-header-font-size();
+			@include base-header-font-size(6);
 			background-color: $drafting-color;
 			color: $white-color;
 			padding: 3vw;
 		}
 
 		span {
-			@include base-header-font-size(5);
+			//@include base-header-font-size(5);
+			@include base-header-font-size(4);
 			padding: 3vw;
 		}
 
 	}
 
 	.drafting-article {
-		@include base-header-font-size(5);
-		padding: 5vw;
+		//@include base-header-font-size(5);
+		@include base-header-font-size(3);
+		//padding: 5vw;
+		padding: 0 15vw;
 
 		p {
 			margin-bottom: 5vw;
-			line-height: 8vw;
+			//line-height: 8vw;
+			line-height: 5vw;
 		}
 	}
 
@@ -40,3 +45,5 @@
 		width: 100vw;
 	}
 }
+
+@import './drafting-media-queries.scss';

@@ -1,0 +1,28 @@
+@media screen and (max-width: 550px) {
+
+	.drafting-wrapper {
+
+		.drafting-header {
+
+			h2 {
+				@include base-header-font-size();
+			}
+
+			span {
+				@include base-header-font-size(5);
+			}
+
+		}
+
+		.drafting-article {
+			@include base-header-font-size(5);
+			padding: 5vw;
+
+			p {
+				line-height: 8vw;
+			}
+		}
+
+	}
+
+}
