@@ -38,7 +38,7 @@
 
 		@each $item in $image-list {
 			&.#{$item}-background {
-				background-image: url('app/images/#{$item}.jpeg');
+				background-image: url('./images/#{$item}.jpeg');
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;

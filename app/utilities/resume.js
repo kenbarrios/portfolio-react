@@ -3,7 +3,7 @@ const resume = {
 		name: 'ken barrios',
 		location: 'lincoln square, chicago',
 		email: 'ken.barrios.13 at gmail',
-		img: 'ken.jpg'
+		img: 'ken.jpeg'
 	},
 	blurb: 'I want to make things, destroy things, then make more things',
 	tech: ['html', 'css', 'sass', 'javascript', 'typescript', 'jquery','angularjs', 'react'],

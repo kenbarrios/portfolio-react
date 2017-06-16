@@ -9,7 +9,7 @@ var config = {
 		filename: 'index_bundle.js',
 		publicPath: '/'
 	},
-	devtool: 'source-map',
+	// devtool: 'source-map',
 	module: {
 		rules: [
 			{ test: /\.(js)$/, use: 'babel-loader' },
@@ -27,7 +27,7 @@ var config = {
 					]
 			},
 			{ test: /\.(ttf|eot|jpeg|jpg|png|gif|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
-				use: [ 'file-loader' ]
+				use: [ 'file-loader?name=images/[name].[ext]', 'image-webpack-loader' ]
 			},
 		]
 	},

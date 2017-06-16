@@ -15,12 +15,12 @@ $black-background: rgba(50,50,50,1);
 	-ms-box-sizing: $x;
 }
 
-@mixin base-flex-around-center($x: row, $y: space-around, $z: center) {
+@mixin base-flex-around-center($x: row, $y: space-around, $z: center, $a: wrap) {
 	display: flex;
 	flex-direction: $x;
 	justify-content: $y;
 	align-items: $z;
-	flex-wrap: wrap;
+	flex-wrap: $a;
 }
 
 * {

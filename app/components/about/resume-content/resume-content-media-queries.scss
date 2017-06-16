@@ -1,0 +1,62 @@
+@media screen and (max-width: 550px) {
+	.resume-header {
+		@include base-flex-around-center(column, center, center);
+
+		.resume-header-contact {
+			@include base-flex-around-center(row, center, center, nowrap);
+
+			h3, p {
+				font-size: 4vw;
+				text-align: center;
+			}
+		}
+
+		.resume-header-avatar {
+			.avatar {
+				width: 100%;
+			}
+		}
+	}
+
+	.resume-body {
+
+		.resume-blurb article p {
+			font-size: 6vw;
+		}
+		.resume-body-lists {
+			flex-direction: column;
+
+			.resume-list-header {
+				font-size: 7vw;
+			}
+
+			.resume-tech-list ul li {
+				font-size: 6vw;
+				line-height: 8vw;
+			}
+
+			.resume-body-sub-lists {
+				width: 100%;
+
+				h3 {
+					text-align: center;
+				}
+
+				h4 {
+					font-size: 6vw;
+				}
+
+				ul li {
+					height: auto;
+					margin-bottom: 5vw;
+					text-align: center;
+
+					p {
+						font-size: 6vw;
+					}
+				}
+			}
+		}
+	}
+
+}
