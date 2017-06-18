@@ -26,9 +26,9 @@ function Footer() {
 					<h6>linkedin</h6>
 				</li>
 			</ul>
-			<div>
+			<div className='footer-copyright'>
 				<h4>
-					&copy; ken barrios <br/> built with ReactJS and Webpack
+					&copy; ken barrios: built with ReactJS and Webpack
 				</h4>
 			</div>
 		</footer>

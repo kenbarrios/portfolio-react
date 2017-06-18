@@ -46,9 +46,14 @@ footer {
 		}
 	}
 
-	h4 {
+	.footer-copyright {
+		margin-top: 2vw;
+
+		h4 {
 			color: rgba(225,225,225,1);
+			font-weight: 100;
 		}
+	 }
 }
 
 .back-button {
