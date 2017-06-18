@@ -8,6 +8,24 @@
 	align-items: center;
 	flex-wrap: wrap;
 
+	//////////////////////////////////
+
+	.experiment-nav {
+		ul {
+			height: auto;
+			width: auto;
+			flex-direction: row;
+			transform: rotateZ(0deg);
+			li {
+				a {
+					color: #363636;
+				}
+			}
+		}
+	}
+
+	//////////////////////////////////
+
 	nav {
 		width: 30%;
 		height: 100%;

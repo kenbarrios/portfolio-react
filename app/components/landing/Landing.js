@@ -7,13 +7,20 @@ import About from '../about/About';
 import Projects from '../projects/Projects';
 import Drafting from '../drafting/Drafting';
 
+function Dummy() {
+	return(
+		<div style={{display: 'none'}}>
+		</div>
+	)
+}
+
 
 function Landing() {
 	return (
 		<section className='landing'>
 			<Nav />
 			<Switch>
-				<Route exact path='/' component={Title} />
+				<Route exact path='/' component={Dummy} />
 				<Route path='/about' component={About} />
 				<Route path='/projects' component={Projects} />
 				<Route path='/drafting' component={Drafting} />
