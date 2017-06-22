@@ -20,8 +20,12 @@
 
 	.resume-body {
 
-		.resume-blurb article p {
-			font-size: 6vw;
+		.resume-blurb {
+			margin-top: 5vw;
+			
+			article p {
+				font-size: 6vw;
+			}	
 		}
 		.resume-body-lists {
 			flex-direction: column;
@@ -30,9 +34,13 @@
 				font-size: 7vw;
 			}
 
-			.resume-tech-list ul li {
-				font-size: 6vw;
-				line-height: 8vw;
+			.resume-tech-list {
+				margin: 5vw 0 9vw 0;
+
+				ul li {
+					font-size: 6vw;
+					line-height: 8vw;
+				}
 			}
 
 			.resume-body-sub-lists {
