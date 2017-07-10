@@ -50,10 +50,10 @@ const resume = {
 			focus: 'history & political science'
 		}
 	]
-}
+};
 
 module.exports = {
 	getResume: () => {
 		return resume;
 	}
-}
+};

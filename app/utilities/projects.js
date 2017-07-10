@@ -53,4 +53,4 @@ module.exports = {
 	getList: ()  => {
 		return projectList;
 	}
-}
+};

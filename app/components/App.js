@@ -10,7 +10,7 @@ class App extends React.Component {
 					<Landing />
 				</div>
 			</BrowserRouter>
-		)
+		);
 	}
 }
 

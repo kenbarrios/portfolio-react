@@ -6,7 +6,7 @@ function Back() {
 		<aside className='back-button'>
 			<NavLink className='fa fa-chevron-left' aria-hidden='true' to='/'></NavLink>
 		</aside>
-	)
+	);
 }
 
 module.exports = Back;
