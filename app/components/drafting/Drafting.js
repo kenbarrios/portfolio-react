@@ -2,7 +2,7 @@ import React from 'react';
 import Back from '../global/Back';
 import PageHeader from '../global/PageHeader';
 import Footer from '../global/Footer';
-import E00001 from './E00001';
+import Drafts from './Drafts';
 
 class Drafting extends React.Component {
 	render() {
@@ -12,10 +12,16 @@ class Drafting extends React.Component {
 				<PageHeader>
 					drafting
 				</PageHeader>
-				<E00001 />
+				{
+					Drafts.map((Element, index) => {
+						return(
+							<Element key={index}/>
+						);
+					})
+				}
 				<Footer />
 			</section>
-		)
+		);
 	}
 }
 

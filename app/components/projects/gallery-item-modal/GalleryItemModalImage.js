@@ -7,11 +7,11 @@ function GalleryItemModalImage(props) {
 		<div className='gallery-modal-image-container'>
 			<img className='gallery-modal-image' src={pic} alt={props.project.title} />
 		</div>
-	)
+	);
 }
 
 GalleryItemModalImage.propTypes = {
 	project: PropTypes.object.isRequired
-}
+};
 
 module.exports = GalleryItemModalImage;

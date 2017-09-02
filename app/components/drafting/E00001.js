@@ -23,7 +23,7 @@ function E00001() {
 			</article>
 			<DraftingImage title='madeline.jpeg' caption='my bike - madeline' />
 		</section>
-	)
+	);
 }
 
 module.exports = E00001;

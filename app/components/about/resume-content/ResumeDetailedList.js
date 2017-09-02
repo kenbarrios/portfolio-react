@@ -14,17 +14,17 @@ function ResumeDetailedList(props) {
 							<p>{s.period}</p>
 							<p>{s.focus}</p>	
 						</li>
-					)
+					);
 				})
 			}
 			</ul>
 		</div>
-	)
+	);
 }
 
 ResumeDetailedList.propTypes = {
 	title: PropTypes.string.isRequired,
 	list: PropTypes.array.isRequired
-}
+};
 
 module.exports = ResumeDetailedList;
