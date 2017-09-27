@@ -4,8 +4,9 @@
 }
 
 .drafting-wrapper {
-	min-height: 100vh;
 	@include base-flex-around-center(column, space-between, flex-start);
+	min-height: 600px;
+	margin: 10px 0;
 	color: $drafting-color;
 
 	.drafting-header {
@@ -42,7 +43,8 @@
 
 
 	.drafting-image {
-		width: 100vw;
+		width: 100%;
+		margin: 0 auto;
 	}
 }
 

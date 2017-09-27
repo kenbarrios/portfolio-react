@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function DraftingImage(props) {
 	return(
-		<div>
+		<div className="l_m--x-auto">
 			<img className='drafting-image' src={require('../../../images/' + props.title)} alt={props.caption} />
 		</div>
 	)
