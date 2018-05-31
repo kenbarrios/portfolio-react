@@ -1,7 +1,8 @@
 .landing {
 	width: 100%;
 	height: 100vh;
-	background-color: $white-color;
+	background-color: $construction-color;
+	color: $wheat-color;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -64,6 +65,11 @@
 		h2 {
 			font-size: 5vw;
 			font-weight: 500;
+		}
+
+		p {
+			text-align: left;
+			margin-left: 10px;
 		}
 	}
 }

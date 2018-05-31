@@ -6,6 +6,8 @@ function Title() {
 			<h1>ken</h1>
 			<h1>barrios</h1>
 			<h2>front end developer</h2>
+
+			<p>[site under reconstruction]</p>
 		</div>
 	)
 }

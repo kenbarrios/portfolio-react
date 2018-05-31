@@ -11,14 +11,14 @@ import Drafting from '../drafting/Drafting';
 function Landing() {
 	return (
 		<section className='landing'>
-			<Nav />
+			{/* <Nav /> */}
 			<Switch>
 				<Route exact path='/' component={Title} />
 				<Route path='/about' component={About} />
 				<Route path='/projects' component={Projects} />
 				<Route path='/drafting' component={Drafting} />
 				<Route render={function() {
-						return (<p>404 Not Found</p>)
+						return (<p>404 Not Found</p>);
 					}}
 				/>
 			</Switch>
