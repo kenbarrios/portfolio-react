@@ -49,7 +49,7 @@ const projectList = [
 	},
 ];
 
-module.exports = {
+export default  {
 	getList: ()  => {
 		return projectList;
 	}

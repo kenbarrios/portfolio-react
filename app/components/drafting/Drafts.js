@@ -5,4 +5,4 @@ import E00001 from './E00001';
 
 let Drafts =  [E00003, E00002, E00001];
 
-module.exports = Drafts;
+export default  Drafts;

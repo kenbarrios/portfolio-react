@@ -23,4 +23,4 @@ function E00002() {
 	);
 }
 
-module.exports = E00002;
+export default  E00002;

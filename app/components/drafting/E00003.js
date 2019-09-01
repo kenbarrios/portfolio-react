@@ -20,4 +20,4 @@ function E00003() {
 	);
 }
 
-module.exports = E00003;
+export default  E00003;

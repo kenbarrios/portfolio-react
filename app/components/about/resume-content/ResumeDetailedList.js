@@ -27,4 +27,4 @@ ResumeDetailedList.propTypes = {
 	list: PropTypes.array.isRequired
 };
 
-module.exports = ResumeDetailedList;
+export default  ResumeDetailedList;

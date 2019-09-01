@@ -20,4 +20,4 @@ function Tech() {
 	)
 }
 
-module.exports = Tech;
+export default  Tech;

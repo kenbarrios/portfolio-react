@@ -35,4 +35,4 @@ class Resume extends React.Component {
 	}
 }
 
-module.exports = Resume;
+export default  Resume;

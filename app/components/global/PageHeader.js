@@ -8,4 +8,4 @@ function PageHeader(props) {
 	)
 }
 
-module.exports = PageHeader;
+export default  PageHeader;

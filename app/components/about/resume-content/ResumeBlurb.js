@@ -15,4 +15,4 @@ ResumeBlurb.propTypes = {
 	blurb: PropTypes.string.isRequired
 }
 
-module.exports = ResumeBlurb;
+export default  ResumeBlurb;

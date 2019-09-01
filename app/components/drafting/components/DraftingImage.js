@@ -14,4 +14,4 @@ DraftingImage.propTypes = {
 	caption: PropTypes.string.isRequired
 }
 
-module.exports = DraftingImage;
+export default  DraftingImage;

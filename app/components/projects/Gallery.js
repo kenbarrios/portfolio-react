@@ -53,4 +53,4 @@ class Gallery extends React.Component {
 	}
 }
 
-module.exports = Gallery;
+export default  Gallery;

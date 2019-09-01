@@ -22,4 +22,4 @@ ResumeTechList.propTypes = {
 	tech: PropTypes.array.isRequired
 }
 
-module.exports = ResumeTechList;
+export default  ResumeTechList;

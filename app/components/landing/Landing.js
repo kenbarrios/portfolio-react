@@ -27,4 +27,4 @@ function Landing() {
 	)
 }
 
-module.exports = Landing;
+export default  Landing;

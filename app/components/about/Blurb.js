@@ -36,4 +36,4 @@ function Blurb() {
 	)
 }
 
-module.exports = Blurb;
+export default  Blurb;

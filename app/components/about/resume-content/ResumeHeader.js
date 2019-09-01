@@ -20,4 +20,4 @@ ResumeHeader.propTypes = {
 	contact: PropTypes.object.isRequired
 }
 
-module.exports = ResumeHeader;
+export default  ResumeHeader;

@@ -22,4 +22,4 @@ VerticalText.propTypes = {
 	background: PropType.string.isRequired
 }
 
-module.exports = VerticalText;
+export default  VerticalText;

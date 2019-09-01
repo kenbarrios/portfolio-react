@@ -67,4 +67,4 @@ GalleryItemModal.propTypes = {
 	project: PropTypes.object.isRequired
 }
 
-module.exports = GalleryItemModal;
+export default  GalleryItemModal;

@@ -15,4 +15,4 @@ DraftingHeader.propTypes = {
 	date: PropTypes.string.isRequired
 }
 
-module.exports = DraftingHeader;
+export default  DraftingHeader;

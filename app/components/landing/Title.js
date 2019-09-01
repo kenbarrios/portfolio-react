@@ -12,4 +12,4 @@ function Title() {
 	)
 }
 
-module.exports = Title;
+export default  Title;

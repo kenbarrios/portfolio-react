@@ -9,4 +9,4 @@ function Back() {
 	);
 }
 
-module.exports = Back;
+export default  Back;

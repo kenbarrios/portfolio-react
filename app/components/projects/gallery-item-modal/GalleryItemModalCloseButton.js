@@ -33,4 +33,4 @@ GalleryItemModalCloseButton.propTypes = {
 	close: PropTypes.func.isRequired
 }
 
-module.exports = GalleryItemModalCloseButton;
+export default  GalleryItemModalCloseButton;

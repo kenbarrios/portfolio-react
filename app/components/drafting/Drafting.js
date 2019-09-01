@@ -25,4 +25,4 @@ class Drafting extends React.Component {
 	}
 }
 
-module.exports = Drafting;
+export default  Drafting;

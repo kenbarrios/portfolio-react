@@ -52,7 +52,7 @@ const resume = {
 	]
 };
 
-module.exports = {
+export default  {
 	getResume: () => {
 		return resume;
 	}

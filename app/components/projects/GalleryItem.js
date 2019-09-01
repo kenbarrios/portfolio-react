@@ -43,4 +43,4 @@ class GalleryItem extends React.Component {
 	}
 }
 
-module.exports = GalleryItem;
+export default  GalleryItem;
