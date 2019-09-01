@@ -123,3 +123,40 @@ ul {
 @import './components/about/about';
 @import './components/projects/projects';
 @import './components/drafting/drafting';
+
+// Revamp.
+$off-white: rgb(205, 205, 205);
+$off-black: rgb(50, 50, 50);
+
+
+body {
+	font-family: $base-font;
+	font-size: 16px;
+}
+
+h1,
+.text-h1 {
+	font-size: 4.75rem;
+	font-weight: 900;
+	line-height: 0.9;
+
+	@media screen and (min-width: 760px) {
+		font-size: 8rem;
+	}
+
+	@media screen and (min-width: 950px) {
+		font-size: 12rem;
+	}
+
+	@media screen and (min-width: 1020px) {
+		font-size: 13rem;
+	}
+
+	@media screen and (min-width: 1300px) {
+		font-size: 14.25rem;
+	}
+
+	@media screen and (min-width: 1500px) {
+		font-size: 16rem;
+	}
+}
